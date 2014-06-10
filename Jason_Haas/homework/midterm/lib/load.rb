@@ -10,15 +10,15 @@ class Load
 
 		case @menu_input
 		when '1'
-			@response = eb_client.event_search("category=#{@query_input}")
+			@response = eb_client.event_search({ category: @query_input})
 		when '2'
-			@response = eb_client.event_search("city=#{@query_input}")
+			@response = eb_client.event_search({ city: @query_input})
 		when '3'
-			@response = eb_client.event_search("region=#{@query_input}")
+			@response = eb_client.event_search({ region: @query_input})
 		when '4'
-			@response = eb_client.event_search("postal_code#{@query_input}")
+			@response = eb_client.event_search({ postal_code: @query_input})
 		when '5'
-			@response = eb_client.event_search("date=#{@query_input}")
+			@response = eb_client.event_search({ date: @query_input})
 		else
 			puts "Something went wrong."
 		end

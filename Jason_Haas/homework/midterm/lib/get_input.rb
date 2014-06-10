@@ -4,15 +4,8 @@ class GetInput
 	def initialize
 	end
 
-	def menu
-		begin  # Keep prompting for input until criteria is met
-			print "\nSelection -------> "
-			@menu_input = gets.chomp 
-			abort("Thanks for using the Party Crasher App!") if @menu_input =~ /q/i  # Regex!
-		end until @menu_input =~ /[1-5]/   # Regex!
-	end
-
-	def query
+	def query(menu_input)
+		@menu_input = menu_input
 		case @menu_input
 		when '1'
 			puts "Enter a category such as conferences, conventions, entertainment, fundraisers, etc."

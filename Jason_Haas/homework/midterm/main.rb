@@ -1,4 +1,5 @@
 require 'eventbrite-client'
+require 'json'
 
 require_relative 'lib/display'
 require_relative 'lib/get_input'
@@ -17,3 +18,11 @@ input = GetInput.new
 input.menu
 input.query
 data = Load.new(token, input.menu_input, input.query_input)
+
+output = File.open("output.json")
+output << data.response
+output.close
+# puts data.response
+# data.response['events']['event'].each do |text|
+# 	puts text['title']
+# end

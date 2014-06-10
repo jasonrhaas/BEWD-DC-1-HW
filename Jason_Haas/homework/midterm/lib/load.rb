@@ -1,7 +1,7 @@
 require 'eventbrite-client'
 
 class Load
-	attr_accessor :token, :menu_input, :query_input
+	attr_accessor :token, :menu_input, :query_input, :response
 
 	def initialize(token, menu_input, query_input)
 		@menu_input = menu_input
@@ -23,7 +23,4 @@ class Load
 			puts "Something went wrong."
 		end
 	end
-
-	def to_s
-		
 end

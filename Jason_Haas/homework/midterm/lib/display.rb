@@ -10,6 +10,6 @@ class Display
 		puts "3.  Region"
 		puts "4.  Postal code"
 		puts "5.  Event start date"
-		GetInput.new
+		print "\nOr enter 'q' to quit\n"
 	end
 end

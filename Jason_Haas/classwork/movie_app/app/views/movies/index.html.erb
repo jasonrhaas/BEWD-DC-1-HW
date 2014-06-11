@@ -1,0 +1,7 @@
+<h2> Welcome to RetFlix! See our collection of movies below </h2>
+<% @my_movies.each do |movie| %>
+	<p>Title: <%= movie.title %><br>
+	Description: <%= movie.description %><br>
+	Year released: <%= movie.year_released %></p>
+	<% end %>
+	

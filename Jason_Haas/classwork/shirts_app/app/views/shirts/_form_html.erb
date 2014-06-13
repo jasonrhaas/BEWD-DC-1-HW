@@ -1,0 +1,12 @@
+<% if @my_shirts.errors.any? %>
+<%= @my_shirts.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+<% end %>
+
+<%= form_for @my_shirts do |f| %>
+	<div><%= f.text_field :name %> </div>
+<div><%= f.text_area :description %></div>
+	
+	<%= f.submit %>
+<% end %>

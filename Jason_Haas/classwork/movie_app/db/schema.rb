@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20140611024726) do
     t.string   "title"
     t.text     "description"
     t.integer  "year_released"
+    t.integer  "rating",        default: 3
     t.datetime "created_at"
     t.datetime "updated_at"
   end

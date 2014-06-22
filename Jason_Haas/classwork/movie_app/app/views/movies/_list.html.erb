@@ -1,0 +1,10 @@
+<% @my_movies.each do |movie| %>
+  <section>
+    <header>
+      (<b><%= movie.year_released %></b>)
+      <%= link_to movie.title, movie %> <%= link_to "Edit", edit_movie_path(movie) %>
+    </header>
+    <%= movie.description %>
+  </section>
+  <br/>
+<% end %>

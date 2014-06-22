@@ -1,9 +1,9 @@
 <h2> Welcome to RetFlix! See our collection of movies below </h2>
-<%= render partial: 'search_movie' %>
 
-<% @my_movies.each do |movie| %>
-	<p>Title: <%= movie.title %><br>
-	Description: <%= movie.description %><br>
-	Year released: <%= movie.year_released %></p>
-	<% end %>
-	
+<h3><%= link_to "+ Add New Movie", new_movie_path %></h3>
+
+<%= render 'search_movie' %>
+
+<br><br>
+
+<%= render 'list' %>

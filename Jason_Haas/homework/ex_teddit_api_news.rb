@@ -93,4 +93,8 @@ print_mashable
 print_digg
 print_reddit
 
+# Jason, you nailed this assignment! There is some repeated between lines 66 and 88.
+# Can you think of a way to have one method, and call it three different times with
+# different arguments?
+
 
